@@ -24,7 +24,7 @@ export function CardAnimation({ children, ...rest }: CardAnimationProps) {
       // TODO - setup animated style
       opacity: interpolate(cardOpacity.value,
         [0, 1],
-        [cardOpacity.value, 1],
+        [0, 1],
         Extrapolate.CLAMP
       ),
       transform: [

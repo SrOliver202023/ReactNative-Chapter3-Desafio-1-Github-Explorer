@@ -38,7 +38,6 @@ export function Dashboard() {
      */
     addRepository(inputText.replace(/\s+/g, ''));
     setInputText('');
-    console.log(repositories);
     inputRef.current?.blur();
   }
 
