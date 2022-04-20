@@ -24,7 +24,7 @@ export interface RepositoryProps {
   open_issues_count: number;
   issues_url: string;
 
-  issues: IssueProps[]
+  issues: IssueProps[];
 }
 
 interface RepositoriesContextData {
@@ -64,7 +64,7 @@ function RepositoriesProvider({ children }: RepositoriesProviderProps) {
       Alert.alert(
         "Erro",
         "Ocorreu um erro ao buscar pelo repositório. Verifique a sua conexão e o nome do repositório e tente novamente."
-      )
+      );
     }
   }
 
@@ -84,7 +84,7 @@ function RepositoriesProvider({ children }: RepositoriesProviderProps) {
     <RepositoriesContext.Provider value={{ repositories, addRepository, removeRepository, findRepositoryById }}>
       {children}
     </RepositoriesContext.Provider>
-  )
+  );
 }
 
-export { RepositoriesProvider, RepositoriesContext }
+export { RepositoriesProvider, RepositoriesContext };
